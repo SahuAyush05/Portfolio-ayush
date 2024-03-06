@@ -6,7 +6,23 @@
 }
 .hero-img::before{
     content: "";
-    background-image: url();
+    background-image: url("../assets/img4.jpg");
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.hero-img h1{
+    font-size: 2.4rem;
+
+}
+.hero-img p{
+    font-size: 1.4rem;
+    text-align: center;
 }
 .heading{
     width: 100%;
@@ -15,4 +31,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:1040px) {
+    .hero-img h1{
+        font-size: 2rem;
+    
+    }
+    .hero-img p{
+        font-size: 1.2rem;
+    }
 }
