@@ -5,25 +5,25 @@ import ServiceCard from "./ServiceCard.jsx";
 function Services() {
   const serviceData = [
     {
-      imgSrc: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg", // Figma logo
-      title: "UI/UX Designing",
-      description: "Crafting intuitive and visually appealing designs using Figma, Adobe XD, and Framer to enhance user engagement and satisfaction.",
-      readMoreAlt: "Read more about UI/UX Designing",
-    },
-    {
-      imgSrc: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg", // React logo
+      imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png", // React logo
       title: "Frontend Development",
-      description: "Developing responsive and dynamic web applications using React, Tailwind CSS, Material UI, and Bootstrap for seamless user experiences.",
+      description: "Creating responsive and dynamic web applications using React, Tailwind CSS, and Material UI for an engaging user experience.",
       readMoreAlt: "Read more about Frontend Development",
     },
     {
-      imgSrc: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg", // Java logo
-      title: "Java Full Stack Development",
-      description: "Building robust full-stack applications with Java, including backend development, database management, and frontend integration.",
-      readMoreAlt: "Read more about Java Full Stack Development",
+      imgSrc: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg", // Node.js logo
+      title: "Backend Development",
+      description: "Building robust backend services with Node.js, integrating APIs, and managing databases to support seamless application functionality.",
+      readMoreAlt: "Read more about Backend Development",
     },
-    // Add more service items as needed
+    {
+      imgSrc: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg", // Java logo
+      title: "Full Stack Development",
+      description: "Developing complete web solutions using Java for backend services and React for frontend, ensuring a cohesive user experience.",
+      readMoreAlt: "Read more about Full Stack Development",
+    },
   ];
+  
 
   const location = useLocation();
 
@@ -63,8 +63,7 @@ function Services() {
           </div>
           <div className="flex gap-5 my-auto max-md:flex-wrap max-md:max-w-full">
             <div className="flex-1 my-auto text-xl md:w-2/3 text-right text-white max-md:max-w-full">
-              Whether you need a stunning UI/UX design, a dynamic frontend, or a robust Java full stack development, I've got you covered. Let's create something amazing together.
-            </div>
+            Whether you're looking for a dynamic frontend, or a robust full-stack solution with Java and Node.js, I'm ready to collaborate. Let’s create something extraordinary together!  </div>
             <Link
               to="#"
               className="text-white hover:text-gray-300"

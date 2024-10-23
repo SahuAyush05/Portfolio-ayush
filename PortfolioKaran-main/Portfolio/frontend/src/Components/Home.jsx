@@ -8,6 +8,7 @@ import MyComponent from './ContactForm'
 import AboutMe from './Aboutme'
 import Services from './Services'
 import Chatbot from './Chatbot/Chatbot'
+import Experience from './Experience'
 
 
 
@@ -31,7 +32,8 @@ const Home = () => {
       
         </div >
         <AboutMe/>
-        
+        <Experience/>
+        <Work/>
         <SkillSection/>
         <div className='h-96'>
 

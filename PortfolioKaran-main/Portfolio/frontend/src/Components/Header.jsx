@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 
 const buttons = [
   { Name: "Home", Address: "/home" },
-  { Name: "Works", Address: "/work" },
   { Name: "Contact", Address: "#contactForm" },
 ];
 
@@ -52,14 +51,14 @@ const Header = () => {
   };
 
   return (
-    <div className={`fixed w-screen top-0 backdrop-blur-2xl shadow-sm shadow-white/10 transition-transform ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+    <div className={`fixed w-screen  lg:w-1/2 lg:left-1/4 lg:rounded-[40px] top-0 backdrop-blur-2xl shadow-sm shadow-white/20 transition-transform ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div
         className={`${
           isMenuOpen ? "h-72" : ""
-        } w-screen p-2 pb-1`}
+        } w-screen lg:w-1/2 p-2 pb-1`}
       >
         <h1 className="absolute pl-8 pt-2 text-3xl font-semi-bold font-mono">
-          KARAN.
+          Ayush.
         </h1>
 
         <div className="flex justify-end items-center pr-2 pt-2">

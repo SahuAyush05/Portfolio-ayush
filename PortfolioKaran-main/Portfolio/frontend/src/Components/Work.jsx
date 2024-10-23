@@ -2,78 +2,65 @@ import React, { useState, useEffect, useRef } from "react";
 
 import Header from "./Header";
 import Footer from "./Footer";
-import mzone1 from "../assets/mzone1.png";
-import mzone2 from "../assets/mzone2.png";
-import Grievease1 from "../assets/Grievease1.png";
-import Grievease2 from "../assets/Grievease2.png";
-import koinx1 from "../assets/koinx1.png";
-import koinx2 from "../assets/koinx2.png";
-import chatMitra1 from "../assets/Chatmitra1.png";
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'; // Icons for GitHub and external link
 
-import chatMitra2 from "../assets/Chatmitra2.png";
 
-import movie1 from "../assets/movie1.png";
-
-import movie2 from "../assets/movie2.png";
 
 import "./Ds.css";
 import Work2 from "./UI";
 const items = [
   {
     id: 1,
-    url: "https://mzone.vercel.app/",
-    github: "https://github.com/karangangwar341/mzone", // Replace with actual GitHub URL
-    title: "Mzone",
-    subtitle: "Revolutionary Music App",
+    url: "https://ai-planet.vercel.app/",
+    github: "https://github.com/SahuAyush05/AIplanet",
+    title: "AI Planet",
+    subtitle: "AI-Powered PDF Query System",
     description:
-      "Engineered Mzone, a groundbreaking music application, with Node.js backend, Firebase database, and React frontend.",
-    images: [mzone1, mzone2],
+      "Developed an application that allows users to upload PDF files, convert them to vector data, and query using an AI chatbot.",
+    images: [/* Add images for AI Planet */],
   },
   {
     id: 2,
     url: "https://griev-ease-ten.vercel.app/",
-    github: "https://github.com/karangangwar341/grievease", // Replace with actual GitHub URL
+    github: "https://github.com/SahuAyush05/GrievEase",
     title: "GrievEase",
     subtitle: "Transparent Grievance Management Portal",
     description:
-      "Reduced the time to report a complaint by over 50%. Crafted an intuitive UI using Figma.",
-    images: [Grievease1, Grievease2],
+      "An intuitive platform that reduces complaint reporting time by over 50%, enhancing user engagement.",
+    images: [/* Add images for GrievEase */],
   },
   {
     id: 3,
-    url: "https://placeholder.com",
-    github: "https://github.com/yourusername/signlanguage", // Replace with actual GitHub URL
-    title: "SignLanguageReader",
-    subtitle: "Sign Language Detection",
+    url: "https://currency-converter-five.vercel.app/",
+    github: "https://github.com/SahuAyush05/Currency_Converter",
+    title: "Currency Converter",
+    subtitle: "Convert currencies easily",
     description:
-      "Developed a Python code to detect and translate sign language alphabets.",
-    images: [
-      "https://via.placeholder.com/400x300.png?text=SignLanguageReader+Image1",
-      "https://via.placeholder.com/400x300.png?text=SignLanguageReader+Image2",
-    ],
+      "A user-friendly currency converter supporting over 190 countries, developed with React.",
+    images: [/* Add images for Currency Converter */],
   },
   {
     id: 4,
     url: "https://placeholder.com",
-    github: "https://github.com/yourusername/chatmitra", // Replace with actual GitHub URL
-    title: "ChatMitra",
-    subtitle: "AI-Powered Chatbot",
+    github: "https://github.com/SahuAyush05/hotstar_clone",
+    title: "Hotstar Clone",
+    subtitle: "Streaming Platform Replica",
     description:
-      "Developed ChatMitra, a chatbot app with a noticeboard and infographics.",
-    images: [chatMitra1, chatMitra2],
+      "Created a replica of the Hotstar streaming platform, showcasing videos and user interactivity.",
+    images: [/* Add images for Hotstar Clone */],
   },
   {
     id: 5,
     url: "https://placeholder.com",
-    github: "https://github.com/karangangwar341/moviemania", // Replace with actual GitHub URL
-    title: "MovieMania",
-    subtitle: "Movie Details at your fingertips",
+    github: "https://github.com/SahuAyush05/ExpenseTracker",
+    title: "Expense Tracker",
+    subtitle: "Manage Your Expenses",
     description:
-      "MovieMania is a movie web application that displays a list of movies and details.",
-    images: [movie1, movie2],
+      "A web application that helps users track their expenses and manage their finances effectively.",
+    images: [/* Add images for Expense Tracker */],
   },
 ];
+
 
 const Work = () => {
   const [selectedId, setSelectedId] = useState(null);
@@ -263,8 +250,6 @@ const Work = () => {
           </div>
         )}
       </main>
-
-      <Work2 />
 
       <Footer />
     </div>

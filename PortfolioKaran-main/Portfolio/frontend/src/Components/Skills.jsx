@@ -8,79 +8,58 @@ const skills = [
   { 
     skill: 'JavaScript', 
     percentage: 70, 
-    description: 'Expert in JavaScript. Used in project: Mzone', 
+    description: 'Proficient in JavaScript. Used in projects like AI Planet Chatbot.', 
     color: '#F7DF1E', 
     icon: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' 
   },
   { 
+    skill: 'Mongo-DB', 
+    percentage: 70, 
+    description: 'Experienced in MongoDB. Used in projects like WhiteBoard.', 
+    color: '#F7DF1E', 
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Antu_mongodb.svg/768px-Antu_mongodb.svg.png?20160706123547' 
+  },
+  { 
     skill: 'React', 
-    percentage: 65, 
-    description: 'Proficient in React. Used in project: GrievEase', 
+    percentage: 75, 
+    description: 'Experienced in React. Used in projects like Mzone and GrievEase.', 
     color: '#61DAFB', 
     icon: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' 
   },
   { 
-    skill: 'CSS', 
-    percentage: 80, 
-    description: 'Excellent in CSS. Used in project: Portfolio', 
-    color: '#2965F1', 
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg' 
-  },
-  { 
-    skill: 'HTML', 
+    skill: 'NodeJS', 
     percentage: 75, 
-    description: 'Excellent in HTML. Used in project: Portfolio', 
-    color: '#E44D26', 
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg' 
+    description: 'Proficient in NodeJS. Used in projects like RealTime-Whiteboard.', 
+    color: '#3776AB', 
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg' 
   },
   { 
     skill: 'Python', 
-    percentage: 65, 
-    description: 'Proficient in Python. Used in project: SignLanguageReader', 
+    percentage: 75, 
+    description: 'Proficient in Python. Used in project: AI Planet Chatbot.', 
     color: '#3776AB', 
     icon: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' 
   },
   { 
     skill: 'Java', 
     percentage: 80, 
-    description: 'Proficient in Java. Used in project: GrievEase', 
+    description: 'Proficient in Java. Used in project: GrievEase.', 
     color: '#007396', 
     icon: 'https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg' 
   },
   { 
-    skill: 'Spring Boot', 
-    percentage: 70, 
-    description: 'Experienced in Spring Boot. Used in project: GrievEase', 
-    color: '#6DB33F', 
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg' 
-  },
-  { 
     skill: 'SQL', 
     percentage: 65, 
-    description: 'Excellent in SQL. Used in project: Database Management', 
+    description: 'Excellent in SQL. Used in database management projects.', 
     color: '#4479A1', 
     icon: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png' 
   },
   { 
     skill: 'Git', 
     percentage: 50, 
-    description: 'Excellent in Git. Used in project: Version Control', 
+    description: 'Proficient in Git for version control in various projects.', 
     color: '#F05032', 
     icon: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg' 
-  },
-  { 
-    skill: 'Tailwind CSS', 
-    percentage: 80, 
-    description: 'Proficient in Tailwind CSS. Used in project: Portfolio', 
-    color: '#38B2AC', 
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg' 
-  },
-  { 
-    skill: 'Figma', 
-    percentage: 70, 
-    description: 'Proficient in Figma. Used in project: UI Design', 
-    color: '#F24E1E', 
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg' 
   },
 ];
 
@@ -103,14 +82,14 @@ const SkillsSection = () => {
         Skills
       </animated.h1>
       <animated.h2 style={headingStyles} className='text-center py-2 mt-5 mb-3'>
-        <Typewriter
-          onTypingEnd={() => {}}
-          options={{
-            strings: ['Proficiencies in various technologies'],
-            autoStart: true,
-            loop: false,
-          }}
-        />
+      <Typewriter
+  options={{
+    strings: ['Proficiencies in various technologies'], // Ensure this is an array
+    autoStart: true,
+    loop: false,
+  }}
+/>
+
       </animated.h2>
       <div className="flex flex-wrap justify-center gap-4">
         {skills.map((skill, index) => (

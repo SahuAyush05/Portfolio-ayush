@@ -51,12 +51,13 @@ function Header() {
               </h1>
               <div ref={ref} className="text-lg h-96 gradient2-text about-me-section">
                 {startTyping && (
-                  <Typewriter
-                    text="Hi, I'm Karan Gangwar, a passionate B.Tech student in Computer Science and Engineering at IET Lucknow. With a knack for turning ideas into reality, I have developed projects like Mzone, GrievEase, and SignLanguageReader. I excel in Java, C++, JavaScript, SQL, Python, and HTML, always striving to enhance my skills. I love crafting intuitive and engaging user experiences using modern frameworks like ReactJS and Tailwind CSS. I thrive on challenges and enjoy problem-solving, ensuring high-quality solutions in every project. Let's collaborate and bring digital dreams to life."
-                    textStyle={{ color: 'gray-50', fontSize: '1.1em', lineHeight: '1.6' }}
-                    typeSpeed={40}
-                    cursor
-                  />
+                <Typewriter
+                text="Hi, I'm Ayush Sahu, a passionate B.Tech student in Computer Science and Engineering at IET Lucknow. I've developed projects like GrievEase and RealTime-Whiteboard, with expertise in NodeJS, C++, JavaScript, and ReactJS. I thrive on solving complex problems and creating seamless digital experiences. Let's collaborate and bring innovative ideas to life."
+                textStyle={{ color: 'gray-50', fontSize: '1.1em', lineHeight: '1.6' }}
+                typeSpeed={40}
+                cursor
+              />
+              
                 )}
               </div>
               <div className="flex gap-4 pr-20 mt-16 max-md:flex-wrap max-md:pr-5 max-md:mt-10">

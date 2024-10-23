@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backdropBlur: {
+        md: '12px',
+      },
       animation: {
         bounce: "bounce 2s infinite",
       },
