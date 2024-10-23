@@ -138,7 +138,7 @@ const Work = () => {
       </h1>
       <main
         style={{ height: "75vh", zIndex: 0 }}
-        className=" mx-1 px-0 pt-24 h-full z-0 overflow-hidden"
+        className=" mx-1 pt-24 h-full z-0 overflow-hidden"
       >
         <section className="mb-16  z-0 h-full overflow-y-auto">
           <style>
@@ -154,7 +154,7 @@ const Work = () => {
 
           <div
             ref={containerRef}
-            className=" ml-3 flex overflow-x-scroll py-12 px-0 mx-0"
+            className=" ml-3 flex overflow-x-scroll py-12 pl-96 mx-0"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {items.map((item) => (

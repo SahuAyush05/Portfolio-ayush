@@ -51,11 +51,11 @@ const Header = () => {
   };
 
   return (
-    <div className={`fixed w-screen  lg:w-1/2 lg:left-1/4 lg:rounded-[40px] top-0 backdrop-blur-2xl shadow-sm shadow-white/20 transition-transform ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+    <div className={`fixed w-screen mt-2 lg:w-1/2 lg:left-1/4 lg:rounded-[40px] top-0 backdrop-blur-2xl shadow-sm shadow-white/20 transition-transform ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div
         className={`${
           isMenuOpen ? "h-72" : ""
-        } w-screen lg:w-1/2 p-2 pb-1`}
+        } w-auto p-2 pb-1`}
       >
         <h1 className="absolute pl-8 pt-2 text-3xl font-semi-bold font-mono">
           Ayush.

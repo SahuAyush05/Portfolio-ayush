@@ -38,7 +38,7 @@ class Experience extends Component {
       const mainTechnologies = work.mainTech.map((technology, i) => (
         <Badge
           pill
-          className="bg-purple-700 text-white mr-2 mb-2 shadow-lg"
+          className="bg-purple-700 rounded-lg px-2 py-1 text-white mr-2 mb-2 shadow-lg"
           key={i}
         >
           {technology}
@@ -48,7 +48,7 @@ class Experience extends Component {
       const technologies = work.technologies.map((technology, i) => (
         <Badge
           pill
-          className="bg-purple-600 text-white mr-2 mb-2 shadow-lg"
+          className=" text-white mr-2 mb-2 shadow-lg"
           key={i}
         >
           {technology}
@@ -57,7 +57,8 @@ class Experience extends Component {
 
       return (
         <VerticalTimelineElement
-          className="vertical-timeline-element--work bg-opacity-10"
+          className="vertical-timeline-element--work bg-opacity-10 "
+          contentStyle={{ background: 'transparent', color: '#fff' }}
           date={work.years}
           iconStyle={{
             background: "#6B46C1", // Darker purple for icon
@@ -76,10 +77,10 @@ class Experience extends Component {
     });
 
     return (
-      <section id="resume" className=" text-white pb-5">
+      <section id="resume" className=" my-24 h-screen  text-white pb-5">
         <div className="col-md-12 mx-auto">
-          <div className="col-md-12">
-            <h1 className="text-3xl font-bold text-center mb-5">{sectionName}</h1>
+          <div className="col-md-12 my-24">
+            <h1 className="text-5xl font-bold text-center mb-5">{sectionName}</h1>
           </div>
         </div>
         <div className="col-md-8 mx-auto">
