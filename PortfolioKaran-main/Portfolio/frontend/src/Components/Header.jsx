@@ -31,7 +31,7 @@ const Header = () => {
   }, []);
 
   const handleContactClick = () => {
-    if (location.pathname === "/home") {
+    if (location.pathname === "") {
       scrollToContactForm();
     } else {
       // Navigate to home page and scroll to contact form

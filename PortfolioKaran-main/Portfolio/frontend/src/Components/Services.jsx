@@ -48,7 +48,7 @@ function Services() {
   };
 
   return (
-    <div className="flex justify-center items-center px-16 py-20 max-md:px-5">
+    <div className="flex justify-center items-center px-16 lg:px-44 py-20 max-md:px-5">
       <div className="flex flex-col mt-5 w-full max-w-[1480px] max-md:max-w-full">
         <div className="flex gap-5 justify-between w-full max-md:flex-wrap max-md:max-w-full">
           <div className="flex flex-col">
