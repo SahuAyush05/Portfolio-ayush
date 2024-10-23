@@ -2,7 +2,7 @@ import * as React from "react";
 import { AiOutlineMail, AiOutlinePhone, AiOutlineEnvironment, AiOutlineInstagram } from "react-icons/ai";
 import { RiFileDownloadLine } from "react-icons/ri";
 import image from "../assets/contactphoto.png";
-import resume from "../assets/karan_resume.pdf";
+import resume from "../assets/Ayush_Sahu_Resume_1.pdf";
 
 function SocialIcon({ src, alt,url }) {
   return <a href={url} className="hover:scale-105"> <img loading="lazy" src={src} alt={alt} className="shrink-0 aspect-square w-[50px]" />

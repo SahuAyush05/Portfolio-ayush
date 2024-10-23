@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Typewriter from "react-typewriter-effect";
 import { useInView } from "react-intersection-observer";
-import profilepic from '../assets/avatar.png'
+import profilepic from '../assets/profile.png'
 function SocialMediaLinks() {
   const links = [
    { src: "https://cdn.builder.io/api/v1/image/assets/TEMP/ce7a5392200faa7795d7c982290d739a4ea5d3c612c145679fe027eef2dccb8a?apiKey=78edfb5432bb454ba45341ffa54eb21f&", alt: "Social Icon 1", url:"https://instagram.com/the_silent_boy_1101"  },
@@ -42,7 +42,7 @@ function Header() {
   return (
     <header className="flex md:h-screen h-fit  overflow-hidden flex-col items-center px-16 pt-12 max-md:px-5">
       <div className="w-full max-w-[1478px] max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+        <div className="flex gap-5 max-md:flex-col max-md:gap-0 py-0 lg:px-20">
           <section className="flex flex-col w-[42%] max-md:ml-0 max-md:w-full">
             <article className="flex flex-col self-stretch my-auto max-md:mt-10 max-md:max-w-full">
               <div className="flex gap-4 text-2xl text-right text-gray-50 max-md:flex-wrap"></div>
@@ -67,11 +67,11 @@ function Header() {
             </article>
           </section>
           <section className="flex flex-col ml-5 w-[58%] max-md:ml-0 max-md:w-full">
-            <div className="relative">
+            <div className="relative flex justify-center p-12">
               <img
                 loading="lazy"
                 src={profilepic} alt="Shree portrait"
-                className="grow w-full aspect-[1] max-md:mt-10 max-md:max-w-full"
+                className="grow h-auto w-2/3 rounded-[120px] p-0 m-24  right-0  max-md:mt-10 max-md:max-w-full"
               />
             </div>
           </section>

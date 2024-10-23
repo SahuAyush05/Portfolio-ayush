@@ -3,21 +3,30 @@ import React, { useState, useEffect, useRef } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'; // Icons for GitHub and external link
+import currency from "../assets/currency.png";
+import currenc2 from "../assets/currency2.png";
+import Expense from "../assets/Expense.png";
+import Expense2 from "../assets/Expense2.png";
+import g1 from "../assets/Grievease1.png";
+import g2 from "../assets/Grievease2.png";
+import p1 from "../assets/pdf.png";
+import p2 from "../assets/pdf2.png";
+import uniflex from "../assets/uniflex.png"
+import uniflex2 from "../assets/uniflex2.png"
 
 
 
 import "./Ds.css";
-import Work2 from "./UI";
 const items = [
   {
     id: 1,
-    url: "https://ai-planet.vercel.app/",
-    github: "https://github.com/SahuAyush05/AIplanet",
+    url: "https://github.com/SahuAyush05/AskPDF",
+    github: "https://github.com/SahuAyush05/AskPDF",
     title: "AI Planet",
     subtitle: "AI-Powered PDF Query System",
     description:
       "Developed an application that allows users to upload PDF files, convert them to vector data, and query using an AI chatbot.",
-    images: [/* Add images for AI Planet */],
+    images: [p1,p2],
   },
   {
     id: 2,
@@ -27,7 +36,7 @@ const items = [
     subtitle: "Transparent Grievance Management Portal",
     description:
       "An intuitive platform that reduces complaint reporting time by over 50%, enhancing user engagement.",
-    images: [/* Add images for GrievEase */],
+    images: [g1,g2],
   },
   {
     id: 3,
@@ -37,28 +46,30 @@ const items = [
     subtitle: "Convert currencies easily",
     description:
       "A user-friendly currency converter supporting over 190 countries, developed with React.",
-    images: [/* Add images for Currency Converter */],
+    images: [currency,currenc2],
   },
+
   {
     id: 4,
-    url: "https://placeholder.com",
-    github: "https://github.com/SahuAyush05/hotstar_clone",
-    title: "Hotstar Clone",
-    subtitle: "Streaming Platform Replica",
-    description:
-      "Created a replica of the Hotstar streaming platform, showcasing videos and user interactivity.",
-    images: [/* Add images for Hotstar Clone */],
-  },
-  {
-    id: 5,
-    url: "https://placeholder.com",
+    url: "https://expense-tracker-one-delta.vercel.app/",
     github: "https://github.com/SahuAyush05/ExpenseTracker",
     title: "Expense Tracker",
     subtitle: "Manage Your Expenses",
     description:
       "A web application that helps users track their expenses and manage their finances effectively.",
-    images: [/* Add images for Expense Tracker */],
+    images: [Expense,Expense2],
   },
+  {
+    id: 5,
+    url: "https://uniflux-psi.vercel.app/",
+    github: "https://github.com/SahuAyush05/AIplanet",
+    title: "The INTEROPERABILITY Layer",
+    subtitle: "Connecting Youth to Global Opportunities",
+    description:
+      "This platform connects youth to resources and opportunities on a global scale through an application that enables users to upload PDF files, convert them into vector data, and interact with an AI chatbot for efficient querying.",
+    images: [uniflex,uniflex2],
+}
+
 ];
 
 
@@ -154,7 +165,7 @@ const Work = () => {
 
           <div
             ref={containerRef}
-            className=" ml-3 flex overflow-x-scroll py-12 pl-96 mx-0"
+            className=" ml-3 flex overflow-x-scroll py-12 lg:px-96 mx-0"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {items.map((item) => (

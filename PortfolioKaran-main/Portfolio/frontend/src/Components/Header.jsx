@@ -51,7 +51,7 @@ const Header = () => {
   };
 
   return (
-    <div className={`fixed w-screen mt-2 lg:w-1/2 lg:left-1/4 lg:rounded-[40px] top-0 backdrop-blur-2xl shadow-sm shadow-white/20 transition-transform ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+    <div className={`fixed transition-transform w-screen mt-2 lg:w-1/2 lg:left-1/4 lg:rounded-[40px] top-0 backdrop-blur-2xl shadow-sm shadow-white/20 ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div
         className={`${
           isMenuOpen ? "h-72" : ""
